@@ -42,8 +42,11 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/node",
-      "config": { "nodeVersion": "22.0.0" }
+      "use": "@vercel/next",
+      "config": {
+        "nodeVersion": "22.0.0",
+        "installCommand": "bash ./vercel-build.sh && pnpm install"
+      }
     }
   ]
 }
