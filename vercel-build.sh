@@ -1,13 +1,20 @@
 #!/bin/bash
-# 安装Python和distutils
-apt-get update
-apt-get install -y python3-distutils
 
-# 安装canvas依赖
-apt-get install -y \
-    build-essential \
-    libcairo2-dev \
-    libpango1.0-dev \
-    libjpeg-dev \
-    libgif-dev \
-    librsvg2-dev
+# 添加EPEL仓库
+yum install -y epel-release
+
+# 安装Python开发工具
+yum install -y python3-devel
+
+# 安装canvas所需依赖
+yum install -y \
+    gcc-c++ \
+    make \
+    cairo-devel \
+    pango-devel \
+    libjpeg-turbo-devel \
+    giflib-devel \
+    librsvg2-devel
+
+# 安装python distutils
+python3 -m pip install setuptools
