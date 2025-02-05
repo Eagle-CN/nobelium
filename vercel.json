@@ -48,5 +48,10 @@
         "installCommand": "bash ./vercel-build.sh && pnpm install"
       }
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "PYTHON": "python3"
+    }
+  }
 }
