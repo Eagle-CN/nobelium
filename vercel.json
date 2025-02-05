@@ -43,7 +43,7 @@
     {
       "src": "package.json",
       "use": "@vercel/node",
-      "config": { "nodeVersion": "18.17.0" }
+      "config": { "nodeVersion": "22.0.0" }
     }
   ]
 }
