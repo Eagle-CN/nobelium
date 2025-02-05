@@ -17,7 +17,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap --config next-sitemap.config.js"
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
+    "vercel-build": "bash ./vercel-build.sh && next build"
   },
   "dependencies": {
     "axios": "^1.6.1",
